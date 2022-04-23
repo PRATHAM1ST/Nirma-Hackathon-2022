@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+.container > .program{
+    max-width: 40%;
+    grid-template-columns: 80% auto;
+}
+.container > .program > img{
+    transform: translate(0);
+    height: 10em;
+}
+
+.payment{
+    width: 40%;
+    display: flex;
+}
+
+button > svg{
+    width: 30px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    gap: 1em;
+}

@@ -9,7 +9,9 @@ import "./css/index.css";
 import "./css/header.css";
 import "./css/program.css";
 import "./css/auth.css";
+import "./css/page.css";
 import Header from "./elements/Header";
+import Page from "./pages/Page";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/SignIn" element={<Signin/>} />
         <Route path="/Register" element={<Register/>} />
+        <Route path="/Page" element={<Page/>} />
       </Routes>
     </div>
   );

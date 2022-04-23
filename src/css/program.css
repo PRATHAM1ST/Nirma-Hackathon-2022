@@ -13,7 +13,7 @@
     grid-column: 2;
     grid-row: 1 / 10;
     height: 25em;
-    transform: translate(-50px);
+    transform: translate(50px);
     border-radius: var(--brdr-rads);
     z-index: -1;
 }
