@@ -1,0 +1,23 @@
+.Header{
+    padding: 40px 3em;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.Logo>svg{
+    height: 3em;
+}
+
+.link{
+    margin: auto 0;
+}
