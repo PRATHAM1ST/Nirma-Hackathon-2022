@@ -28,3 +28,8 @@ button{
     height: fit-content;
     gap: 1em;
 }
+
+button > *{
+    text-decoration: none;
+    color: white;
+}
