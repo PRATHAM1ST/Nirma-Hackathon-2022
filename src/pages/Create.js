@@ -6,14 +6,13 @@ export default function Register(){
         <>
             <Header home={false} />
             <form className="form">
-                <input type="text" placeholder="Name" required/>
-                <input type="email" placeholder="Email Id" required/>
-                <input type="numeric" minLength={10} maxLength={10} placeholder="Mobile No." required/>
+                <input type="text" placeholder="Title" required/>
+                <input type="" placeholder="" required/>
                 <input type="text" placeholder="Paypal Id" required/>
                 <input type="text" placeholder="Username" required/>
                 <input type="password" placeholder="Password" required/>
                 <button>Register</button>
-                <Link to="/SignIn">Sign In</Link>
+                <Link to="/SignIn">Upload</Link>
             </form>
         </>
     )

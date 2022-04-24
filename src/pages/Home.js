@@ -1,13 +1,25 @@
-import Header from "../elements/Header";
 import Program from "../elements/Program";
+import Header from "../elements/Header";
+import { useEffect, useState } from "react";
+import {getOrg} from "../Firebase";
 
 export default function Home(){
+    const [data, setData] = useState('');
+    useEffect(()=>{
+        async function fetchdata(){
+            const fbdata = await getOrg();
+            setData(fbdata);
+        };
+        fetchdata();
+    }, [])
     return (
-        <div className="Container">
-            <Program/>
-        </div>
+        <>
+            <Header home={true} />
+            <div className="Container">
+                {data && data.map(d=>{
+                    return <Program data={d}/>
+                })}
+            </div>
+        </>
     )
 }
-
-// https://unsplash.com/photos/9Z1KRIfpBTM
-// https://source.unsplash.com/1920x1080/9Z1KRIfpBTM
