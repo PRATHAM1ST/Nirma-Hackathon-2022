@@ -10,4 +10,8 @@
 .Container{
   max-width: 80vw;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  margin-top: 3em;
 }

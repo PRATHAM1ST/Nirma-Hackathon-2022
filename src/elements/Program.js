@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function Program({data}){
-    console.log(data);
+    const per = data.CurrentAmount * 100 / data.GoalAmount;
     return (
         <div className="program">
             <img className="program-image" src={"https://source.unsplash.com/" + data.Image}></img>
@@ -18,7 +18,7 @@ export default function Program({data}){
                     {data.CurrentAmount} / {data.GoalAmount}
                 </div>
                 <div className="progess-bar">
-                    <div className="progress-bar-percentage"></div>
+                    <div className="progress-bar-percentage" style={{width: per + "%"}}></div>
                 </div>
             </div>
         </div>
