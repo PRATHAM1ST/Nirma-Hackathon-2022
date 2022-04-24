@@ -8,11 +8,15 @@
     margin: 3em auto;
 }
 
-.form > input{
+.form > input, .form > label > input, .form > textarea{
     font-size: 18px;
     width: 40ch;
     border: none;
     box-shadow: 0 2px 0 0 rgb(138, 138, 138);
     outline: none;
     margin-top: 1em;
+}
+
+.form > textarea{
+    resize: vertical;
 }
