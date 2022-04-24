@@ -15,7 +15,7 @@ export default function Program({data}){
             </Link> 
             <div className="progress">
                 <div className="money-raised">
-                    {data.CurrentAmount} / {data.GoalAmount}
+                    Raised Eth: {data.CurrentAmount} / {data.GoalAmount}
                 </div>
                 <div className="progess-bar">
                     <div className="progress-bar-percentage" style={{width: per + "%"}}></div>

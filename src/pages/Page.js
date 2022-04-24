@@ -4,14 +4,18 @@ import Header from "../elements/Header";
 import { getOrgDoc } from "../Firebase";
 
 export default function Page(){
+    const [per, setPer] = useState('');
     const [data, setData] = useState(useParams());
+    
     useEffect(()=>{
         async function get(){
             const d = await getOrgDoc(data.id)
+            setPer(d.CurrentAmount * 100 / d.GoalAmount);
             setData(d);
         };
         get();
     }, [])
+
     return(
         <>
             <Header home={false} />
@@ -23,10 +27,10 @@ export default function Page(){
                     <p className="description">{data.Description}</p>
                     <div className="progress">
                         <div className="money-raised">
-                            {data.CurrentAmount} / {data.GoalAmount}
+                            Raised Eth: {data.CurrentAmount} / {data.GoalAmount}
                         </div>
                         <div className="progess-bar">
-                            <div className="progress-bar-percentage"></div>
+                            <div className="progress-bar-percentage" style={{width: per + "%"}}></div>
                         </div>
                     </div>
                 </div>

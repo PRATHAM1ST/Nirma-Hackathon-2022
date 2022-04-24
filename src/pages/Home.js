@@ -16,6 +16,7 @@ export default function Home(){
         <>
             <Header home={true} />
             <div className="Container">
+                {!data &&<h1>Loading...</h1>}
                 {data && data.map(d=>{
                     return <Program data={d}/>
                 })}

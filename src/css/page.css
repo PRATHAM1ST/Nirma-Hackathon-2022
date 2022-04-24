@@ -6,6 +6,7 @@
 .container > .program{
     max-width: 40%;
     grid-template-columns: 80% auto;
+    box-shadow: none;
 }
 .container > .program > img{
     transform: translate(0);
@@ -15,6 +16,7 @@
 .payment{
     width: 40%;
     display: flex;
+    box-shadow: -101px 0 0 -100px black;
 }
 
 button > svg{
