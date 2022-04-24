@@ -37,7 +37,7 @@ export default function Page(){
                 <div className="payment">
                     <form className="form">
                         <h1>THANK YOU!</h1>
-                        <input type="number" placeholder="Amount" required/>
+                        <input type="number" placeholder="Amount" min={0}  required/>
                         <input type="text" placeholder="Description" />
                         <button>
                         <svg width="30" height="30" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
